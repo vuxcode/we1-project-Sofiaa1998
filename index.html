@@ -25,4 +25,11 @@
         "halloween",
         "wizard"
     ]
+
+    // Picks a random word from the guessing_words array.
+    // The Math.random function result is multiplied by the length of the array.
+    // The result of this multiplication is rounded down with the Math.floor function to get a valid index number to use. 
+    var random_index = Math.floor(Math.random() * guessing_words.length);
+    document.write(guessing_words[random_index] )
+
 </script>
