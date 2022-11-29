@@ -1,6 +1,19 @@
 <!-- Start writing your project code in this file! -->
 
+
+<button onclick="check_letter_guess()">Letter x</button>
+
+
 <script>
+
+    //test
+    var text = "That was correct/wrong";
+
+    var guess = '';
+    var wrong_guesses = 0;
+    var wrong_guesses_max = 6;
+    var guessed_letters = []
+
     var guessing_words = [
         "kitchen",
         "library",
@@ -31,5 +44,17 @@
     // The result of this multiplication is rounded down with the Math.floor function to get a valid index number to use. 
     var random_index = Math.floor(Math.random() * guessing_words.length);
     document.write(guessing_words[random_index] )
+
+    // Creates a array of letters from a string.
+    // Split seperates each letter individually and join removes commas.
+    var buttons = 'abcdefghijklmnopqrstuvwxyz'.split('').join('')
+
+    function check_letter_guess(){
+        alert(text);
+    }
+
+
+    //document.write(buttons[0])
+    //document.write(buttons)
 
 </script>
