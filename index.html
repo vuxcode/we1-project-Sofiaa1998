@@ -2,30 +2,27 @@
 
 <!DOCTYPE html>
 
-<button id="newGameButton">NewGame</button>
-<button id="testKey">A</button>
-
-<!-- Div for key buttons-->
-<div id="forButtons"></div>
 
     <head>
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
-        <div class="container"></div>
-        <script src="script.js"></script>
-        <div class="container">
-            <div id="letter-container" class="letter-container"></div>
-        </div>
-
         <nav>
             <ul>
                 <li><a href="">How to play the game</a></li>
                 <li><a href="index.html">Hangman</a></li>
                 <li><a href="aboutme.html">About me</a></li>
-    
-                </ul>
+            </ul>
         </nav>
-   
+
+        <div class="middelBox">
+            <button id="newGameButton">NewGame</button>
+            <div id="wordBox"></div>
+            <div id="keyboardBox"></div>
+            </div>
+        </div>
+        
+        <!-- The script tag is in the end of the body because all HTML elements must be loaded before. -->
+        <script src="script.js"></script>
     </body>
 </html>
