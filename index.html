@@ -2,11 +2,11 @@
 
 <!DOCTYPE html>
 
-
     <head>
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
+
         <nav>
             <ul>
                 <li><a href="">How to play the game</a></li>
@@ -16,9 +16,11 @@
         </nav>
 
         <div class="middelBox">
-            <button id="newGameButton">NewGame</button>
+            <button id="newGameButton">New Game</button>
             <div id="wordBox"></div>
-            <div id="keyboardBox"></div>
+            <!-- Input box only allows a single letter, and also a-z characters only -->
+            <input type="text" id="letter" maxlength="1" onkeydown="return /[a-z]/i.test(event.key)" placeholder="Enter letter">
+                <button id="letterBtn">Submit</button>
             </div>
         </div>
         

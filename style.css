@@ -20,33 +20,6 @@ body {
     border-radius:8px;
 }
 
-#wordBox {
-    font-size: 14px;
-    width: 90vw;
-    max-width: 544px;
-    padding: 12px;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 20%;
-    left: 50%;
-    border-radius:8px;
-    letter-spacing: 0.3em;
-  }
-
-  #keyboardBox {
-    font-size: 14px;
-    width: 90vw;
-    max-width: 544px;
-    padding: 8px;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 80%;
-    left: 50%;
-    border-radius:8px;
-    letter-spacing: 0.3em;
-  }
-
-
 nav {
     width: 80%;
     height: 100px;
@@ -54,6 +27,7 @@ nav {
     border-radius: 8px; 
     background-color: #0c8346ff;
     text-align: center;
+    margin-top: 20px;
 }
 
 ul li {
@@ -69,10 +43,22 @@ font-family: 'Courier New';
 color:  #8fd5a6ff;
 padding: 0 20px;
 font-weight: bold;
+opacity: 0.6;
+transition: 0.3;
+}
+ul li a:hover {
+    opacity: 1;
 }
 
  #newGameButton {
     padding: 15px 32px;
+    position: absolute;
+    top: 80%;
+    left: 38%;
+    margin: auto;
+    display: block;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     background-color: #0c8346ff;
     font-size: 16px;
     font-family: 'Courier New';
@@ -83,9 +69,67 @@ font-weight: bold;
     cursor: pointer;
     opacity: 0.6;
     transition: 0.3s;
+    
     }
     
 #newGameButton:hover {
     opacity: 1;
 }
 
+#wordBox {
+    font-size: 40px;
+    width: 90vw;
+    max-width: 544px;
+    padding: 12px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 30%;
+    left: 50%;
+    border-radius:8px;
+    letter-spacing: 0.3em;
+    text-align: center;
+    font-weight: bold;
+}
+    
+#letter {
+    
+    position: relative;
+    text-align:center;
+    margin:auto;
+    top: 80%;
+    padding: 5px 2px;
+    border-radius: 8px;
+    background-color: #0c8346ff;
+    color: #8fd5a6ff;
+    font-size: 16px;
+    font-family: 'Courier New';
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+    
+}
+#letter:hover {
+    opacity: 1;
+}
+::placeholder {
+    color: #8fd5a6ff;
+}
+
+#letterBtn {
+    padding: 5px 2px;
+    border-radius: 8px;
+    background-color: #0c8346ff;
+    font-size: 16px;
+    font-family: 'Courier New';
+    color: #8fd5a6ff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+}   
+#Letterbtn:hover {
+    opacity: 1;
+}
