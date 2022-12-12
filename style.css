@@ -49,6 +49,12 @@ transition: 0.3;
 ul li a:hover {
     opacity: 1;
 }
+h3 {
+    color:#8fd5a6ff;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
 
  #newGameButton {
     padding: 15px 32px;
@@ -75,6 +81,34 @@ ul li a:hover {
 #newGameButton:hover {
     opacity: 1;
 }
+
+#guessesLeftBox {
+    padding: 15px 32px;
+    position: absolute;
+    top: 80%;
+    left: 0%;
+    margin: auto;
+    display: block;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-family: 'Courier New';
+    color: #0c8346ff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+    
+    }
+
+    #winOrLoseBox {
+        font-size: 16px;
+        font-family: 'Courier New';
+        font-weight: bold;
+        }
+
 
 #wordBox {
     font-size: 40px;
@@ -130,6 +164,6 @@ ul li a:hover {
     opacity: 0.6;
     transition: 0.3s;
 }   
-#Letterbtn:hover {
+#letterBtn:hover {
     opacity: 1;
 }

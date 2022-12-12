@@ -3,24 +3,26 @@
 <!DOCTYPE html>
 
     <head>
+        <title>Guess The Word</title>
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
-
         <nav>
             <ul>
-                <li><a href="">How to play the game</a></li>
-                <li><a href="index.html">Hangman</a></li>
+                <li><a href="guesstheword.html">How to play the game</a></li>
+                <li><a href="index.html">Guess The Word</a></li>
                 <li><a href="aboutme.html">About me</a></li>
             </ul>
         </nav>
-
+        <h3>Guess The Word</h3>
         <div class="middelBox">
             <button id="newGameButton">New Game</button>
             <div id="wordBox"></div>
+            <div id="guessesLeftBox"></div>
+            <div id="winOrLoseBox"></div>
             <!-- Input box only allows a single letter, and also a-z characters only -->
             <input type="text" id="letter" maxlength="1" onkeydown="return /[a-z]/i.test(event.key)" placeholder="Enter letter">
-                <button id="letterBtn">Submit</button>
+                <button id="letterBtn" >Submit</button>
             </div>
         </div>
         
