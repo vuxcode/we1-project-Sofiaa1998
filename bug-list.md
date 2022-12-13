@@ -2,4 +2,19 @@
 
 > Make a list of the things that don't work as expected. Keep a list of things that you have fixed and try to document how you solved them.
 
-1. Problem: *Describe your problem here* 
+
+1. Problem: Byta från understreck till en bokstav när användaren gissar rätt. Först använde jag push funktionen för en array så att för varje gissning lades en bokstav eller understreck till i arrayen. Problemet var då att den fortsätter att skapa fler bokstäver eller understreck än vad ordet är långt till slut. Jag behövde komma på ett sätt som skulle kolla igenom varje bokstav i ordet för varje gång användaren gjorde en gissning. Först testade jag med att för varje gissning skulle arrayen av ordet som visades på skärmen skapas på nytt, och skriva upp vilka bokstäver som skulle visas och inte. Då blev problemet att den endast bytte ut bokstaven man gissade med och skrev _ för alla andra, men när man gissade en andra gång tog loopen inte hänsyn till första bokstaven man hade gissat på och tog alltså bort denna från skärmen. Jag behövde lösa så att programmet kom ihåg vad som hade gissats på tidigare på något sätt. Lösningen blev att jag skapade en for loop som körs lika många gånger som ordet är långt mha length() funktionen och addera 1 till en variabel för varje loop. På så sätt kan jag tilldela värdet av användarens gissning, till varje element av arrayen för ordet som visas på skärmen, om elementet stämmer överrens med gissningen. Att hitta en funktion i javascript som enkelt kunde byta ut värden i specifika element från en array var ganska svårt, men till sist hittade jag .splice() där man anger element, hur många element som skall sättas in, och sedan värdet som skall sättas in. Nu fick jag en lösning som kunde köra igenom ordet flera gånger som också kom ihåg tidigare gissningar.
+
+
+2. Tangentbord: Jag försökte göra ett tangentbord på skärmen men stötte på flera problem och när jag läste problemen som fanns kom det upp nya. Jag kände att det var för komplicerat för mig och att jag inte förstod flera av koderna som behövdes vilket gjorde att jag valde en annan tillvägagångssätt genom att istället skapa en textbox där användaren själv får skriva in sin bokstav. Då kände jag att jag förstod hela funktionen samt kunde använda mig av kunskapen som jag lärt mig under kursen till att modifiera och hitta lösningar på alla problem som kunde tänkas uppstå. 
+
+3. Självklart var det många småproblem på vägen med programmeringen och hur alla funktioner kommunicera med varandra och hur dom fungerade. Jag testade mig helt enkelt fram tills att det fungerade så jag kan inte påpeka något direkt större problem utan det var förväntat att saker inte skulle fungera med en gång.
+
+
+För webbutvecklingen och CSS:en tillstötte jag inga större problem utan det handlade mer om att bara testa sig fram tills man fick önskat resultat. Jag använde även en validator för att validera all kod och löste dom felen som fanns ganska snabbt. Annars för webbutveckling och CSS tycker jag det har varit hyfsat lätt och jag har lärt mig några nya funktioner. Programmeringen har varit mer utmanande på flera punkter då man behöver tänka på flödet och att saker ska hända i rätt ordning. Utöver detta så har det varit mycket att leta efter vilka funktioner eller lösningar man kan använda för olika problem.
+
+Vad jag skulle gjort annorlunda om jag hade haft mer tid:
+- Jag hade vilja fullfölja min plan med tangentbordet. Det tog upp alldeles för mycket tid så andra saker i projektet blev lidande.
+- Spelet skulle från början vara tänkt att vara ett hänga gubbe spel där en streckgubbe blev hängd, men på grund av tidsbrist efter tangentbordsförsöket valde jag att inte prioritera detta.
+- Jag hade även kunna tänka mig att utveckla webbdesignen ännu mer.
+- När man förlorar kommer det upp en alert box, men egentligen var tanken att Game Over skulle stå på skärmen som vanlig text men jag hann inte komma fram till någon lösning hur Game Over skulle visas för att spelet sedan skulle automatiskt påbörja en ny runda. Med hjälp av alert boxen stannar spelet upp så att Game Over syns innan den nya rundan sätts igång.

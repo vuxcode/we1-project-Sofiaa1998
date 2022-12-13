@@ -1,4 +1,6 @@
-* {
+* 
+/* Controls the site*/
+{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,23 +9,25 @@
 body {
     background-color:#329f5bff ;
 }
+/*Controls the box in the middle*/
 .middelBox {
     font-size: 16px;
     background-color: #8fd5a6ff;
-    width: 90vw;
-    max-width: 544px;
-    padding: 96px;
+    width: 850px;
+    height: 350px;
+    max-width: 850px;
+    padding: 100px;
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 50%;
+    top: 60%;
     left: 50%;
     border-radius:8px;
 }
-
+/*Controls the menubar*/
 nav {
     width: 80%;
     height: 100px;
-   margin: auto;
+    margin: auto;
     border-radius: 8px; 
     background-color: #0c8346ff;
     text-align: center;
@@ -31,42 +35,43 @@ nav {
 }
 
 ul li {
-list-style: none;
-display: inline-block;
-line-height: 100px;
+    list-style: none;
+    display: inline-block;
+    line-height: 100px;
 
 }
 ul li a {
-text-decoration: none;
-font-size: 16px;
-font-family: 'Courier New';
-color:  #8fd5a6ff;
-padding: 0 20px;
-font-weight: bold;
-opacity: 0.6;
-transition: 0.3;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Courier New';
+    color:  #8fd5a6ff;
+    padding: 0 20px;
+    font-weight: bold;
+    opacity: 0.6;
+    transition: 0.3;
 }
+
 ul li a:hover {
     opacity: 1;
 }
+
+/*Controls the heading in index*/
 h3 {
     color:#8fd5a6ff;
     text-align: center;
     font-size: 40px;
     font-weight: bold;
 }
-
+/*Controls the new game button in index and js*/
  #newGameButton {
-    padding: 15px 32px;
+    padding: 20px 38px;
     position: absolute;
-    top: 80%;
-    left: 38%;
+    top: 75%;
+    left: 75%;
     margin: auto;
     display: block;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
     background-color: #0c8346ff;
-    font-size: 16px;
+    font-size: 20px;
     font-family: 'Courier New';
     color: #8fd5a6ff;
     font-weight: bold;
@@ -81,43 +86,51 @@ h3 {
 #newGameButton:hover {
     opacity: 1;
 }
-
+/* Controls the lifes left in index and js*/
 #guessesLeftBox {
-    padding: 15px 32px;
     position: absolute;
-    top: 80%;
-    left: 0%;
+    top: 75%;
+    left: 30px;
     margin: auto;
     display: block;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    font-size: 16px;
+    font-size: 20px;
     font-family: 'Courier New';
     color: #0c8346ff;
     font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    opacity: 0.6;
-    transition: 0.3s;
+  
     
-    }
+}
+
+#guessedLettersBox {
+    position: absolute;
+    top: 85%;
+    left: 30px;
+    margin: auto;
+    display: block;
+    font-size: 20px;
+    font-family: 'Courier New';
+    color: #0c8346ff;
+    font-weight: bold;
+}
 
     #winOrLoseBox {
         font-size: 16px;
         font-family: 'Courier New';
         font-weight: bold;
+        text-align: center;
+        
+        
         }
 
 
 #wordBox {
     font-size: 40px;
-    width: 90vw;
+    width: 90%;
     max-width: 544px;
-    padding: 12px;
+    padding: 5px;
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 30%;
+    top: 20%;
     left: 50%;
     border-radius:8px;
     letter-spacing: 0.3em;
@@ -130,7 +143,8 @@ h3 {
     position: relative;
     text-align:center;
     margin:auto;
-    top: 80%;
+    top: 40%;
+    left: 30%;
     padding: 5px 2px;
     border-radius: 8px;
     background-color: #0c8346ff;
@@ -153,6 +167,8 @@ h3 {
 
 #letterBtn {
     padding: 5px 2px;
+    margin-top: 40px;
+    margin-left: 30%;
     border-radius: 8px;
     background-color: #0c8346ff;
     font-size: 16px;

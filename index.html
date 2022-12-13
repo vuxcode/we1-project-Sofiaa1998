@@ -14,15 +14,22 @@
                 <li><a href="aboutme.html">About me</a></li>
             </ul>
         </nav>
+        <div>
         <h3>Guess The Word</h3>
+        </div>
+        
         <div class="middelBox">
+            <div id="winOrLoseBox"></div>
             <button id="newGameButton">New Game</button>
             <div id="wordBox"></div>
             <div id="guessesLeftBox"></div>
-            <div id="winOrLoseBox"></div>
+            
+            <div id="guessedLettersBox"></div>
             <!-- Input box only allows a single letter, and also a-z characters only -->
+            <div>
             <input type="text" id="letter" maxlength="1" onkeydown="return /[a-z]/i.test(event.key)" placeholder="Enter letter">
                 <button id="letterBtn" >Submit</button>
+            </div>
             </div>
         </div>
         
