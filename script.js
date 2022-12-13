@@ -34,7 +34,8 @@
     var random_index = Math.floor(Math.random() * guessingWords.length);
     var guessWord = guessingWords[random_index]
 
-    document.write(guessWord);
+    // Test to see the word
+    //document.write(guessWord);
 
     // Replaces all letters of the word to guess with an underline
     var currentMatches = guessWord.replace(/./g, "_");
