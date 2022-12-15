@@ -21,7 +21,7 @@
     var newGameInfo = "New game started!";
     var gameOver = "Game over!";
     var gameWon = "Congrats! You win!";
-    var guessWord = '';(guessWord)
+    var guessWord = '';
     var guessesLeft = 7;
     var guessedLetters = [];
     var testing = "testing";
@@ -77,7 +77,7 @@
                         currentMatchesArray.splice( i, 1, userGuess)
                     }
                 }
-
+                
                 // Show guessing progress
                 wordBox.innerHTML = currentMatchesArray.join("");
 

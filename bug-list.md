@@ -8,7 +8,8 @@
 
 2. Tangentbord: Jag försökte göra ett tangentbord på skärmen men stötte på flera problem och när jag läste problemen som fanns kom det upp nya. Jag kände att det var för komplicerat för mig och att jag inte förstod flera av koderna som behövdes vilket gjorde att jag valde en annan tillvägagångssätt genom att istället skapa en textbox där användaren själv får skriva in sin bokstav. Då kände jag att jag förstod hela funktionen samt kunde använda mig av kunskapen som jag lärt mig under kursen till att modifiera och hitta lösningar på alla problem som kunde tänkas uppstå. 
 
-3. Självklart var det många småproblem på vägen med programmeringen och hur alla funktioner kommunicera med varandra och hur dom fungerade. Jag testade mig helt enkelt fram tills att det fungerade så jag kan inte påpeka något direkt större problem utan det var förväntat att saker inte skulle fungera med en gång.
+3. 
+ Självklart var det många småproblem på vägen med programmeringen och hur alla funktioner kommunicera med varandra och hur dom fungerade. Jag testade mig helt enkelt fram tills att det fungerade så jag kan inte påpeka något direkt större problem utan det var förväntat att saker inte skulle fungera med en gång.
 
 
 För webbutvecklingen och CSS:en tillstötte jag inga större problem utan det handlade mer om att bara testa sig fram tills man fick önskat resultat. Jag använde även en validator för att validera all kod och löste dom felen som fanns ganska snabbt. Annars för webbutveckling och CSS tycker jag det har varit hyfsat lätt och jag har lärt mig några nya funktioner. Programmeringen har varit mer utmanande på flera punkter då man behöver tänka på flödet och att saker ska hända i rätt ordning. Utöver detta så har det varit mycket att leta efter vilka funktioner eller lösningar man kan använda för olika problem.
